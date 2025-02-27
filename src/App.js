@@ -6,6 +6,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import References from './components/References';
+import { FaBars } from 'react-icons/fa';
 function App() {
     const [isMobile, setIsMobile] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -22,6 +23,6 @@ function App() {
         setIsSidebarOpen(!isSidebarOpen);
     };
     document.title = "portfolio";
-    return (_jsxs("div", { className: "container", children: [_jsxs("nav", { className: "sidebar", children: [_jsx("div", { className: "sidebar-text", children: _jsx("p", { children: "PORTFOLIO" }) }), _jsxs("ul", { children: [_jsx("li", { children: _jsx("a", { href: "#home", children: "Home" }) }), _jsx("li", { children: _jsx("a", { href: "#about", children: "About Me" }) }), _jsx("li", { children: _jsx("a", { href: "#education", children: "Education" }) }), _jsx("li", { children: _jsx("a", { href: "#projects", children: "Projects" }) }), _jsx("li", { children: _jsx("a", { href: "#references", children: "References" }) }), _jsx("li", { children: _jsx("a", { href: "#contact", children: "Contact" }) })] })] }), isMobile && (_jsx("button", { onClick: toggleSidebar, className: 'hamburger-menu', children: "&=9776;" })), _jsxs("main", { className: "content", children: [_jsx(Home, {}), _jsx(About, {}), _jsx(Education, {}), _jsx(Projects, {}), _jsx(References, {}), _jsx(Contact, {})] })] }));
+    return (_jsxs("div", { className: "container", children: [_jsxs("nav", { className: `sidebar ${isSidebarOpen ? 'open' : ''}`, children: [_jsx("div", { className: "sidebar-text", children: _jsx("p", { children: "PORTFOLIO" }) }), _jsxs("ul", { children: [_jsx("li", { children: _jsx("a", { href: "#home", children: "Home" }) }), _jsx("li", { children: _jsx("a", { href: "#about", children: "About Me" }) }), _jsx("li", { children: _jsx("a", { href: "#education", children: "Education" }) }), _jsx("li", { children: _jsx("a", { href: "#projects", children: "Projects" }) }), _jsx("li", { children: _jsx("a", { href: "#references", children: "References" }) }), _jsx("li", { children: _jsx("a", { href: "#contact", children: "Contact" }) })] })] }), isMobile && (_jsx("button", { onClick: toggleSidebar, className: 'hamburger-menu', children: _jsx(FaBars, {}) })), _jsxs("main", { className: "content", children: [_jsx(Home, {}), _jsx(About, {}), _jsx(Education, {}), _jsx(Projects, {}), _jsx(References, {}), _jsx(Contact, {})] })] }));
 }
 export default App;

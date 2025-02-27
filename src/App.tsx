@@ -5,6 +5,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import References from './components/References';
+import { FaBars } from 'react-icons/fa';
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
     <div className="container">
 
     
-      <nav className="sidebar">
+      <nav className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-text">
             <p>PORTFOLIO</p>
         </div>
@@ -54,7 +55,7 @@ function App() {
       {/* as hamburger for mobile */}
       {isMobile && (
         <button onClick={toggleSidebar} className='hamburger-menu'>
-          &=9776;
+          <FaBars />
         </button>
       )}
 
