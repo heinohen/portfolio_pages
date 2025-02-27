@@ -1,4 +1,2 @@
-# Portfolio page
-
+# Portfolio pages
 * Personal homepage
-# portfolio_pages
